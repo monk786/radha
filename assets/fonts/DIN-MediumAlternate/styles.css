@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'DIN-MediumAlternate';
+  src: url('DIN-MediumAlternate.eot?#iefix') format('embedded-opentype'),  url('DIN-MediumAlternate.otf')  format('opentype'),
+	     url('DIN-MediumAlternate.woff') format('woff'), url('DIN-MediumAlternate.ttf')  format('truetype'), url('DIN-MediumAlternate.svg#DIN-MediumAlternate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,55 @@
+@import "./breakpoints";
+
+$side-padding : 88px;
+
+
+%full-width {
+    width : 100%;
+    float: left;
+}
+
+%site-side-padding {
+
+
+    padding-left : $side-padding;
+    padding-right: $side-padding;
+
+    @include desktop-lap(){
+        padding-left : 66px;
+        padding-right: 66px;
+    }
+
+    @include tablet-large(){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include mobile-large(){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+%flex-display {
+    display: flex;
+}
+
+
+%image {
+
+    width: 100%;
+    display: block;
+
+}
+
+
+
+img {
+    @extend %image
+}
+
+%content-center-width {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,21 @@
+.body-copy{
+    font-size:16px;
+    line-height: 1.5;
+    font-family: "din-alt-reg";
+
+    &--big{
+        font-size:50px;
+        text-transform: uppercase;
+        color:#585858;
+        font-family: "din-alt-mid";
+        line-height: 1;
+
+        @include mobile-large{
+            font-size:30px;
+        }
+    }
+}
+
+a{
+    color: currentColor;
+}
