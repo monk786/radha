@@ -1,12 +1,20 @@
 
 
 
-$desktop_w_lap : 1366px;
+$desktop_w_lap : 1500px;
 $desktop_w_lap_sm : 1220px;
 $tablet_l : 1024px;
 $tablet_s : 980px;
 $mobile_l : 680px;
 $mobile_md : 480px;
+
+
+//1500
+@mixin desktop-lap-lg {
+  @media (max-width: #{$desktop_w_lap}) {
+    @content;
+  }
+}
 
 //1366
 @mixin desktop-lap {

@@ -10,8 +10,12 @@
         font-family: "din-alt-mid";
         line-height: 1;
 
-        @include mobile-large{
+        @include desktop-lap-lg(){
             font-size:30px;
+        }
+
+        @include mobile-large{
+            font-size:25px;
         }
     }
 }
