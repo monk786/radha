@@ -205,7 +205,7 @@ main {
   margin: 0 auto; }
 
 .work-item-img-wrap {
-  cursor: url(../images/cursor-pointer.png), auto; }
+  cursor: url(/assets/images/cursor-pointer.png), auto; }
 
 .gallery {
   max-width: 80%; }
