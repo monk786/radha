@@ -6,7 +6,7 @@ $(document).ready(function(){
     });
     // scroll animation
 
-    // var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
     
     
 
@@ -29,5 +29,18 @@ $(document).ready(function(){
     //     .addTo(controller);
         
     // });
+
+    $(".parallax-element").each(function(){
+        // console.log($(this).addClass("tada"));
+        
+        var _this = $(this);
+
+        var dataOffset = _this.data("offset");
+        console.log("dataOffset",dataOffset);
+        var parallxScene =  new ScrollMagic.Scene({triggerElement:this,triggerHook: "onEnter", duration: "200%"})
+					.setTween(_this, {y: dataOffset, ease: Linear.easeNone})
+					// .addIndicators()
+                    .addTo(controller);
+    });
 
 });
